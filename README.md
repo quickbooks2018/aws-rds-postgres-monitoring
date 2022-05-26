@@ -10,3 +10,5 @@ docker-compose up -d
 - https://github.com/prometheus-community/postgres_exporter
 
 - https://github.com/prometheus-community/postgres_exporter/blob/master/queries.yaml
+
+- https://github.com/prometheus-community/postgres_exporter#readme
