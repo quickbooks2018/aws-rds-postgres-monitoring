@@ -12,10 +12,8 @@ services:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
 
   postgres-exporter:
-    image: prometheuscommunity/postgres-exporter:latest
+    image: bitnami/postgres-exporter:latest
     ports:
       - 9187:9187
     environment:                      # rdsendpoint #rdspassword #database
-      DATA_SOURCE_NAME: "postgresql://cloudgeeks-postgres.ckmishuf8m2v.us-east-1.rds.amazonaws.com:12345678@postgres:5432/shop?sslmode=disable"
-    links:
-      - prometheus
+      DATA_SOURCE_NAME: "postgresql://cloudgeeks-postgres-rds.cqrjzf7kbek3.us-east-1.rds.amazonaws.com:12345678@postgres:5432/shop?sslmode=disable"
