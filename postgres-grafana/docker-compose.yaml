@@ -17,7 +17,7 @@ services:
     image: bitnami/postgres-exporter:latest
     ports:
       - 9187:9187
-    environment:                      # dbname #password #rds-endpoint
+    environment:                      # username #password #rds-endpoint                                                       # dbname
       DATA_SOURCE_NAME: "postgresql://postgres:12345678@cloudgeeks-postgres-rds.cqrjzf7kbek3.us-east-1.rds.amazonaws.com:5432/postgres?sslmode=disable"
 
 volumes:
